@@ -87,6 +87,16 @@ class _LoginState extends State<Login> {
               hintText: 'Digite sua Senha', 
               isPassword: true
             ),
+            MyTextFormField(
+              controller: TextEditingController.fromValue(TextEditingValue.empty), 
+              fillColor: ColorStyle.field, 
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(5),
+                borderSide: BorderSide.none
+              ), 
+              hintText: 'Confirme sua Senha', 
+              isPassword: true
+            ),
             Padding(
               padding: const EdgeInsets.only(top: 24, bottom: 24),
               child: Row(
