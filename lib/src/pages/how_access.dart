@@ -1,3 +1,4 @@
+import 'package:app_gooday/src/componets/color_style.dart';
 import 'package:flutter/material.dart';
 
 class HowAccess extends StatefulWidget {
@@ -47,7 +48,9 @@ class _HowAccessState extends State<HowAccess> {
               height: 62,
               width: MediaQuery.of(context).size.width,
               child: OutlinedButton.icon(
-                onPressed: () => {},
+                onPressed: () => {
+                  Navigator.pushNamed(context, '/login')
+                },
                 icon: Image.network(
                   'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Fbr%2Ficone-gratis%2Fgoogle_2504739&psig=AOvVaw3i87d57U9xI1YUpGA2OH4y&ust=1714520809906000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPiCj_DN6IUDFQAAAAAdAAAAABAE',
                   width: 32,

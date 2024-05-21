@@ -30,7 +30,7 @@ class MyButton extends StatelessWidget {
       child: OutlinedButton(
         onPressed: _onPressedButton,
         style: OutlinedButton.styleFrom(
-          backgroundColor: _isPrimary ? ColorStyle.primary : ColorStyle.secondary,
+          backgroundColor: _isPrimary ? ColorStyle.primary : Colors.white,
           side: const BorderSide(
             color: ColorStyle.primary,
           ),

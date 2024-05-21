@@ -10,7 +10,7 @@ class Gooday extends StatelessWidget {
   Widget build(Object context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/howaccess',
+      initialRoute: '/splash',
       routes: {
         '/splash': (context) => const SplashScreen(),
         '/howaccess': (context) => const HowAccess(),

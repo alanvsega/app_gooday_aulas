@@ -9,6 +9,13 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
+  void initState() {
+    super.initState();
+    Future.delayed(const Duration(seconds: 4))
+      .then((_) => {Navigator.pushReplacementNamed(context, '/howaccess')});
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromRGBO(20, 200, 113, 1.0),
