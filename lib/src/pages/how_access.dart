@@ -28,7 +28,7 @@ class _HowAccessState extends State<HowAccess> {
             padding: EdgeInsets.all(12),
             child: Text('Ótimo dia!',
                 style: TextStyle(
-                  color: Colors.black,
+                  color: ColorStyle.text,
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
                 ),
@@ -37,7 +37,7 @@ class _HowAccessState extends State<HowAccess> {
           const Text(
             'Como deseja acessar?',
             style: TextStyle(
-              color: Color.fromRGBO(0, 0, 0, 1),
+              color: ColorStyle.text,
               fontSize: 15,
               ),
           ),
@@ -52,9 +52,9 @@ class _HowAccessState extends State<HowAccess> {
                   Navigator.pushNamed(context, '/login')
                 },
                 icon: Image.network(
-                  'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Fbr%2Ficone-gratis%2Fgoogle_2504739&psig=AOvVaw3i87d57U9xI1YUpGA2OH4y&ust=1714520809906000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPiCj_DN6IUDFQAAAAAdAAAAABAE',
-                  width: 32,
-                  height: 32,
+                  'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png',
+                  width: 50,
+                  height: 50,
                 ),
                 label: const Text(
                   'Como deseja acessar?',
@@ -63,9 +63,9 @@ class _HowAccessState extends State<HowAccess> {
                   ),
                 ),
                 style: OutlinedButton.styleFrom(
-                  backgroundColor: const Color.fromRGBO(20, 200, 113, 1.0),
+                  backgroundColor: ColorStyle.primary,
                   side: const BorderSide(
-                    color: Color.fromRGBO(20, 200, 113, 0.5),
+                    color: ColorStyle.primary,
                   ),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10.0)
