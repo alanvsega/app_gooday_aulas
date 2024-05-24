@@ -1,3 +1,4 @@
+import 'package:app_gooday/src/componets/color_style.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -18,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(20, 200, 113, 1.0),
+      backgroundColor: ColorStyle.primary,
       body: Center(
         child: Image.asset('lib/assets/Logotipo.png'),
       )
