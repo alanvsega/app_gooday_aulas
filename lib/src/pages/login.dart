@@ -131,7 +131,9 @@ class _LoginState extends State<Login> {
                   marginSize: 0,
                   label: 'Acessar',
                   isPrimary: true,
-                  onPressedButton: () {}
+                  onPressedButton: () => {
+                    Navigator.pushNamed(context, '/introduction')
+                  },
                 ),
                 MyButton(
                   buttonPropotion: 0.4,
