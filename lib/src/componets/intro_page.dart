@@ -8,16 +8,19 @@ class IntroPage extends StatelessWidget {
     required Image image,
     required TabPageSelector tabPageSelector,
     required String title,
-    required String description
+    required String description,
+    required Function onButtonPressed
   }) : _tabPageSelector = tabPageSelector,
     _image = image,
     _title = title,
-    _description = description;
+    _description = description,
+    _onButtonPressed = onButtonPressed;
 
   final Image _image;
   final TabPageSelector _tabPageSelector;
   final String _title;
   final String _description;
+  final Function _onButtonPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +71,7 @@ class IntroPage extends StatelessWidget {
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () => _onButtonPressed(),
                   style: ElevatedButton.styleFrom(
                       backgroundColor: ColorStyle.primary,
                       shape: const CircleBorder(),
